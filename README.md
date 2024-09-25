@@ -52,4 +52,9 @@ python predict.py
 python gui.py   
 
 ```
-##Files
+Files
+prediction_model.py: Contains the code for loading data, training the SVM model, and saving it.
+predict.py: Used for making predictions on a single image.
+gui.py: Provides a graphical user interface for the classifier.
+requirements.txt: Lists the Python packages required to run this project.
+
