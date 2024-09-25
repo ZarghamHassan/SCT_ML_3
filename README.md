@@ -1,1 +1,34 @@
-# SCT_ML_3
+# Cats vs. Dogs Classifier
+
+## Project Overview
+
+This project implements a Support Vector Machine (SVM) model to classify images of cats and dogs using a dataset from Kaggle. The model is trained to distinguish between the two categories based on image features extracted from resized images.
+
+## Table of Contents
+
+- [Dataset](#dataset)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Files](#files)
+- [Results](#results)
+- [License](#license)
+
+## Dataset
+
+The dataset used in this project can be downloaded from Kaggle:
+
+- [Cats vs. Dogs Dataset](https://www.kaggle.com/c/dogs-vs-cats/data)
+
+Please download the dataset and extract it into the `dogs-vs-cats` folder within the project directory.
+
+## Installation
+
+To run this project, you'll need to have Python installed along with the required libraries. You can create a virtual environment and install the necessary packages using the following commands:
+
+```bash
+# Create a virtual environment (optional)
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+# Install required packages
+pip install -r requirements.txt
