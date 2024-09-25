@@ -32,3 +32,37 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 # Install required packages
 pip install -r requirements.txt
+
+## Usage
+
+1. **Load and Train the Model**: Run the following command to train the model:
+   ```bash
+   python prediction_model.py
+This script will:
+
+Load images from the training dataset.
+Resize and normalize the images.
+Split the dataset into training and validation sets.
+Train the SVM model using the training set.
+Evaluate the model's performance on the validation set and print the results.
+Save the trained model to a file named svm_cats_dogs_model.pkl.
+Make Predictions: To classify a single image, modify the image_path variable in predict.py to point to your image and run:
+
+```bash
+Copy code
+python predict.py
+This script will:
+
+Load the trained model from svm_cats_dogs_model.pkl.
+Preprocess the specified image.
+Print the prediction result (either "Cat" or "Dog").
+Graphical User Interface: For an easy-to-use interface, run:
+
+bash
+Copy code
+python gui.py
+The GUI will allow you to:
+
+Load an image file.
+Display the uploaded image.
+Show the prediction result on the screen.
