@@ -34,7 +34,8 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-Load and Train the Model: Run the prediction_model.py file to load the dataset, train the SVM model, and save it for future use.
+1.Load and Train the Model: Run the prediction_model.py file to load the dataset, train the SVM model, and save it for future use.
+
 
 ```bash
 python prediction_model.py
@@ -53,5 +54,12 @@ python predict.py
 python gui.py   
 
 ```
+
+## Files
+prediction_model.py: Contains the code for loading data, training the SVM model, and saving it.
+predict.py: Used for making predictions on a single image.
+gui.py: Provides a graphical user interface for the classifier.
+requirements.txt: Lists the Python packages required to run this project.
+
 
 
