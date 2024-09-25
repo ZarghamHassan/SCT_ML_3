@@ -11,7 +11,6 @@ This project implements a Support Vector Machine (SVM) model to classify images 
 - [Usage](#usage)
 - [Files](#files)
 - [Results](#results)
-- [License](#license)
 
 ## Dataset
 
@@ -32,37 +31,31 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 # Install required packages
 pip install -r requirements.txt
-
-## Usage
-
-1. **Load and Train the Model**: Run the following command to train the model:
-   ```bash
-   python prediction_model.py
-This script will:
-
-Load images from the training dataset.
-Resize and normalize the images.
-Split the dataset into training and validation sets.
-Train the SVM model using the training set.
-Evaluate the model's performance on the validation set and print the results.
-Save the trained model to a file named svm_cats_dogs_model.pkl.
-Make Predictions: To classify a single image, modify the image_path variable in predict.py to point to your image and run:
+```
+##Usage
+1.Load and Train the Model: Run the prediction_model.py file to load the dataset, train the SVM model, and save it for future use.
 
 ```bash
-Copy code
+python prediction_model.py
+```
+2.Make Predictions: Use the predict.py file to classify new images. Update the image_path variable to point to your image.
+
+
+```bash
 python predict.py
-This script will:
 
-Load the trained model from svm_cats_dogs_model.pkl.
-Preprocess the specified image.
-Print the prediction result (either "Cat" or "Dog").
-Graphical User Interface: For an easy-to-use interface, run:
+```
+3.Graphical User Interface: Run the gui.py file to launch a simple GUI for image classification.
 
-bash
-Copy code
-python gui.py
-The GUI will allow you to:
 
-Load an image file.
-Display the uploaded image.
-Show the prediction result on the screen.
+```bash
+python gui.py   
+
+```
+##Files
+prediction_model.py: Contains the code to load data, train the SVM model, and evaluate its performance.
+predict.py: A script for predicting the category of a single image using the trained model.
+gui.py: A graphical user interface for loading images and making predictions.
+##Results
+The model achieves a satisfactory accuracy rate on the validation set. Detailed evaluation metrics such as precision, recall, and F1-score can be found in the output of prediction_model.py.
+
