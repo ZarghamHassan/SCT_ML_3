@@ -52,10 +52,12 @@ python predict.py
 python gui.py   
 
 ```
+
 ##Files
 prediction_model.py: Contains the code to load data, train the SVM model, and evaluate its performance.
 predict.py: A script for predicting the category of a single image using the trained model.
 gui.py: A graphical user interface for loading images and making predictions.
+
 ##Results
 The model achieves a satisfactory accuracy rate on the validation set. Detailed evaluation metrics such as precision, recall, and F1-score can be found in the output of prediction_model.py.
 
