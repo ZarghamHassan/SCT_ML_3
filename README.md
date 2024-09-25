@@ -36,7 +36,6 @@ pip install -r requirements.txt
 ## Usage
 - Load and Train the Model: Run the prediction_model.py file to load the dataset, train the SVM model, and save it for future use.
 
-
 ```bash
 python prediction_model.py
 ```
@@ -60,6 +59,9 @@ python gui.py
 - predict.py: Used for making predictions on a single image.
 - gui.py: Provides a graphical user interface for the classifier.
 - requirements.txt: Lists the Python packages required to run this project.
+
+## Results
+The model achieves a satisfactory accuracy rate on the validation set. Detailed evaluation metrics such as precision, recall, and F1-score can be found in the output of prediction_model.py.
 
 
 
